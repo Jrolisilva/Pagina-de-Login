@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #ccc;
+}
+.content {
+    background-color: #fff;
+    border-radius: 15px;
+    width: 80%;
+    height: 50%;
+    justify-content:space-between;
+    align-items: center;
+    position: relative;
+}
+
+.content::before {
+    content: "";
+    position: absolute;
+    background-color: #58af9b;
+    width: 40%;
+    height: 100%;
+}
+.title {
+    font-size: 28px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.title-welcome {
+    color: #fff;
+}
+
+.description {
+    font-size: 14px;
+    font-weight: 300;
+    color: #fff;
+    line-height: 30px;
+}
+.btn {
+    border-radius: 15px;
+    text-transform: uppercase;
+    padding: 10px 50px;
+    font-size: 10px;
+    cursor: pointer;
+    font-weight: bold;
+}
+.btn-primary {
+    background-color: transparent;
+    border: 1px solid #fff;
+}
+.btn-primary:hover {
+    background-color: #fff;
+    color: #58af9b;
+}
+
+.first-content {
+    display: flex;
+}
+.first-colunm{
+    text-align: center;
+    flex: 1 0 auto;
+    z-index: 10;
+}
+
+.second-colunm {
+    flex: 2 0 auto;
+}
+.list-social-media{
+    display: flex;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+}
+
+.second-content {
+    position: absolute;
+    display: none;
+}
