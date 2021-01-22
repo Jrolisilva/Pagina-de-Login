@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, inicial-scale=1.0">
@@ -7,58 +8,101 @@
     <title>Login</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
     <div class="container">
         <div class="content first-content">
             <div class="first-colunm">
-                <h2 class="title title-welcome">Welcome Back</h2>
-                <p class="description">To keep connected with us</p>
-                <p class="description">please login with your personal info</p>
-                <button class="btn btn-primary">sign in</button>
+                <h2 class="title title-welcome">Bem-Vindo</h2>
+                <p class="description description-primary">Mantenha-se conectado</p>
+                <p class="description description-primary">Entre com seu Login</p>
+                <button id="signin" class="btn btn-primary">Entrar</button>
+                <script src="https://kit.fontawesome.com/2eaf7cfebd.js" crossorigin="anonymous"></script>
             </div>
             <div class="second-colunm">
-                <h2 class="title">Creat Account</h2>
+                <h2 class="title title-second">Crie sua Conta</h2>
                 <div class="social-media">
-                    <ul>
-                        <li><a href="#">Facebook</a></li>
-                        <li><a href="#">Linkedin</a></li>
-                        <li><a href="#">Google +</a></li>
+                    <ul class="list-social-media">
+                        <a class="link-social-media" href="#">
+                            <li class="item-social-media">
+                                <i class="fab fa-facebook"></i>
+                            </li>
+                        </a>
+                        <a class="link-social-media" href="#">
+                            <li class="item-social-media">
+                                <i class="fab fa-linkedin"></i>
+                            </li>
+                        </a>
+                        <a class="link-social-media" href="#">
+                            <li class="item-social-media">
+                                <i class="fab fa-google-plus-g"></i>
+                            </li>
+                        </a>
                     </ul>
                 </div>
-                <p class="description">or use your email for registration</p>
+                <p class="description description-second">ou use sua conta para registrar-se</p>
                 <form class="form">
-                    <input type="text" placeholder="Nome">
-                    <input type="email" placeholder="E-mail">
-                    <input type="password" placeholder="Senha">
-                    <button class="btn">Sign Up</button>
+                    <label class="label-input" for="">
+                        <i class="fas fa-user icon-modify"></i>
+                        <input type="text" placeholder="Nome">
+                    </label>
+                    <label class="label-input" for="">
+                        <i class="far fa-envelope icon-modify"></i>
+                        <input type="email" placeholder="E-mail">
+                    </label>
+                    <label class="label-input" for="">
+                        <i class="fas fa-lock icon-modify"></i>
+                        <input type="password" placeholder="Senha">
+                    </label>
+                    <button class="btn btn-second">Cadastrar</button>
                 </form>
             </div>
         </div>
         <div class="content second-content">
             <div class="first-colunm">
-                <h2 class="title">Hello Friend!</h2>
-                <p class="description">Enter your personal datails</p>
-                <p class="description">and start journey with us</p>
-                <button class="btn">sign up</button>
+                <h2 class="title title-welcome">Ola Amigo!</h2>
+                <p class="description description-primary">Faca o cadastro</p>
+                <p class="description description-primary">e comece sua jornada conosco</p>
+                <button id="signup" class="btn btn-primary">Cadastrar</button>
             </div>
             <div class="second-colunm">
-                <h2 class="title">Sign in the developers</h2>
+                <h2 class="title title-second">Bem Vindo Desenvolvedores</h2>
                 <div class="social-media">
-                    <ul>
-                        <li><a href="#">Facebook</a></li>
-                        <li><a href="#">Linkedin</a></li>
-                        <li><a href="#">Google +</a></li>
+                    <ul class="list-social-media">
+                        <a class="link-social-media" href="#">
+                            <li class="item-social-media">
+                                <i class="fab fa-facebook"></i>
+                            </li>
+                        </a>
+                        <a class="link-social-media" href="#">
+                            <li class="item-social-media">
+                                <i class="fab fa-linkedin"></i>
+                            </li>
+                        </a>
+                        <a class="link-social-media" href="#">
+                            <li class="item-social-media">
+                                <i class="fab fa-google-plus-g"></i>
+                            </li>
+                        </a>
                     </ul>
                 </div>
-                <p class="description">or use your email account:</p>
+                <p class="description description-second">ou use o e-mail de sua conta</p>
                 <form class="form">
-                    <input type="email" placeholder="E-mail">
-                    <input type="password" placeholder="Senha">
-                    <a href="#">forgot your password</a>
-                    <button class="btn">Sign in</button>
+                    <label class="label-input" for="">
+                        <i class="far fa-envelope icon-modify"></i>
+                        <input type="email" placeholder="E-mail">
+                    </label>
+                    <label class="label-input" for="">
+                        <i class="fas fa-lock icon-modify"></i>
+                        <input type="password" placeholder="Senha">
+                    </label>
+                    <a class="password" href="#">Esqueceu sua senha ?</a>
+                    <button class="btn btn-second">Entre</button> 
                 </form>
             </div>
         </div>
     </div>
+    <script src="js/app.js"></script>
 </body>
+
 </html>
